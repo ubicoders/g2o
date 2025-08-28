@@ -30,7 +30,6 @@ RUN git clone --depth 1 https://github.com/RainerKuemmerle/g2o.git /tmp/g2o && \
     rm -rf /tmp/g2o
 
 RUN mkdir -p /home/ubuntu
+COPY ws_ex /home/ubuntu/ws_ex
 
 WORKDIR /home/ubuntu
-
-
