@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libgl1-mesa-dev libglu1-mesa-dev \
  && rm -rf /var/lib/apt/lists/*
 
-# Build and install g2o (shared libs, no apps/examples, no OpenGL)
+# Build and install g2o (shared libs, apps/examples, no OpenGL)
 RUN git clone --depth 1 https://github.com/RainerKuemmerle/g2o.git /tmp/g2o && \
     cmake -S /tmp/g2o -B /tmp/g2o/build \
       -DCMAKE_BUILD_TYPE=Release \

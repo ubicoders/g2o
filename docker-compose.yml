@@ -2,8 +2,8 @@
 services:
   g2o-app:
     build: .
-    image: g2o-ubuntu24:latest
-    container_name: g2o-app
+    image: ubicoders/g2o:latest
+    container_name: g2o_cnt
     network_mode: host
     privileged: true
     stdin_open: true
